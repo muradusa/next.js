@@ -35,7 +35,7 @@ function About() {
         </div>
       </nav>
       <main>
-        <h1>This is about page</h1>
+        <h1>This is about page!!!</h1>
       </main>
     </div>
   );
