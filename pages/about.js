@@ -1,7 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
-
-import { MenuIcon } from "@heroicons/react/outline";
 
 function About() {
   return (
@@ -12,7 +9,7 @@ function About() {
       </Head>
 
       <main>
-        <h1>This is about page!!!</h1>
+        <h1>This is about page!!! Let'see how to use tailwind css</h1>
       </main>
     </div>
   );
