@@ -1,23 +1,21 @@
 import Head from "next/head";
-import Image from "next/image";
+import HeroSection from "../components/HeroSection";
+import Features from "../components/Features";
 
-import { MenuIcon } from "@heroicons/react/outline";
-
-export default function Home() {
+function Home() {
   return (
-    <div className="">
+    <div className="bg-gray-50 h-screen">
       <Head>
-        <title>Murad Cholukov</title>
+        <title>Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col align-middle bg-blue-200 h-screen">
-        <h1 className="h-screen flex flex-col align-middle">
-          This is my next.js app
-        </h1>
+      <main>
+        <HeroSection />
+        <Features />
       </main>
-
-      <footer className=""></footer>
     </div>
   );
 }
+
+export default Home;
