@@ -60,12 +60,12 @@ export default function Example() {
                         {item.name}
                       </a>
                     ))}
-                    <a
+                    {/* <a
                       href="#"
                       className="font-medium text-indigo-600 hover:text-indigo-500"
                     >
                       Log in
-                    </a>
+                    </a> */}
                   </div>
                 </nav>
               </div>

@@ -1,6 +1,9 @@
 import Head from "next/head";
 import HeroSection from "../components/HeroSection";
 import Features from "../components/Features";
+import Footer from "../components/Footer";
+import Projects from "../components/Projects";
+import Contact from "../components/Contact";
 
 function Home() {
   return (
@@ -18,6 +21,10 @@ function Home() {
       <main>
         <HeroSection />
         <Features />
+
+        <Projects />
+        <Contact />
+        <Footer />
       </main>
     </div>
   );
