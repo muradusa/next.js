@@ -13,11 +13,11 @@ function About({ products }) {
       <main>
         <h1>This is about page!!! Let'see how to use tailwind css</h1>
         <>
-          {/* {pages.map((page) => (
+          {pages.map((page) => (
             <div key={page.slug}>
               <h1>{page.title}</h1>
             </div>
-          ))} */}
+          ))}
         </>
       </main>
     </div>
