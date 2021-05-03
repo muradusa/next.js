@@ -21,7 +21,6 @@ function Home() {
       <main>
         <HeroSection />
         <Features />
-
         <Projects />
         <Contact />
         <Footer />

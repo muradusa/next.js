@@ -1,35 +1,57 @@
-/* This example requires Tailwind CSS v2.0+ */
-import {
-  AnnotationIcon,
-  GlobeAltIcon,
-  LightningBoltIcon,
-  ScaleIcon,
-} from "@heroicons/react/outline";
+// /* This example requires Tailwind CSS v2.0+ */
+// import {
+//   AnnotationIcon,
+//   GlobeAltIcon,
+//   LightningBoltIcon,
+//   ScaleIcon,
+// } from "@heroicons/react/outline";
+
+import { Icon, InlineIcon } from "@iconify/react";
+import nextjsIcon from "@iconify-icons/logos/nextjs";
+import reactIcon from "@iconify-icons/logos/react";
+import graphqlIcon from "@iconify-icons/logos/graphql";
+import tailwindcssIcon from "@iconify-icons/logos/tailwindcss-icon";
+import mongodbIcon from "@iconify-icons/logos/mongodb";
+import awsIcon from "@iconify-icons/logos/aws";
+import reduxIcon from "@iconify-icons/logos/redux";
+import firebaseIcon from "@iconify-icons/logos/firebase";
 
 const features = [
   {
-    name: "Competitive exchange rates",
+    name: "Next JS",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-    icon: GlobeAltIcon,
+    icon: nextjsIcon,
   },
   {
-    name: "No hidden fees",
+    name: "React JS",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-    icon: ScaleIcon,
+    icon: reactIcon,
   },
   {
-    name: "Transfers are instant",
+    name: "Graphql",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-    icon: LightningBoltIcon,
+    icon: graphqlIcon,
   },
   {
-    name: "Mobile notifications",
+    name: "TailwindCSS",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-    icon: AnnotationIcon,
+    icon: tailwindcssIcon,
+  },
+  {
+    name: "Redux",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+    icon: reduxIcon,
+  },
+  {
+    name: "AWS",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+    icon: awsIcon,
   },
 ];
 
@@ -55,8 +77,12 @@ export default function Example() {
             {features.map((feature) => (
               <div key={feature.name} className="relative">
                 <dt>
-                  <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                    <feature.icon className="h-6 w-6" aria-hidden="true" />
+                  <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-white text-white">
+                    <Icon
+                      className="h-12 w-12"
+                      aria-hidden="true"
+                      icon={feature.icon}
+                    />
                   </div>
                   <p className="ml-16 text-lg leading-6 font-medium text-gray-900">
                     {feature.name}
