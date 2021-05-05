@@ -7,51 +7,57 @@
 // } from "@heroicons/react/outline";
 
 import { Icon, InlineIcon } from "@iconify/react";
-import nextjsIcon from "@iconify-icons/logos/nextjs";
-import reactIcon from "@iconify-icons/logos/react";
-import graphqlIcon from "@iconify-icons/logos/graphql";
-import tailwindcssIcon from "@iconify-icons/logos/tailwindcss-icon";
-import mongodbIcon from "@iconify-icons/logos/mongodb";
-import awsIcon from "@iconify-icons/logos/aws";
-import reduxIcon from "@iconify-icons/logos/redux";
-import firebaseIcon from "@iconify-icons/logos/firebase";
+// import nextjsIcon from "@iconify-icons/logos/nextjs";
+// import reactIcon from "@iconify-icons/logos/react";
+// import graphqlIcon from "@iconify-icons/logos/graphql";
+// import tailwindcssIcon from "@iconify-icons/logos/tailwindcss-icon";
+// import mongodbIcon from "@iconify-icons/logos/mongodb";
+// import awsIcon from "@iconify-icons/logos/aws";
+// import reduxIcon from "@iconify-icons/logos/redux";
+// import firebaseIcon from "@iconify-icons/logos/firebase";
+import next from "../src/svg/next";
+import aws from "../src/svg/aws";
+import graphql from "../src/svg/graphql";
+import react from "../src/svg/react";
+import redux from "../src/svg/redux";
+import tailwindcss from "../src/svg/tailwindcss";
 
 const features = [
   {
     name: "Next JS",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-    icon: nextjsIcon,
+    icon: next,
   },
   {
     name: "React JS",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-    icon: reactIcon,
+    icon: react,
   },
   {
     name: "Graphql",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-    icon: graphqlIcon,
+    icon: graphql,
   },
   {
     name: "TailwindCSS",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-    icon: tailwindcssIcon,
+    icon: tailwindcss,
   },
   {
     name: "Redux",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-    icon: reduxIcon,
+    icon: redux,
   },
   {
     name: "AWS",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-    icon: awsIcon,
+    icon: aws,
   },
 ];
 
