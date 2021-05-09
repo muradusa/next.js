@@ -27,10 +27,10 @@ export default function Contact() {
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             Let's connect
           </p>
-          <p className="mt-4 max-w-2xl text-xl text-gray-600 lg:mx-auto">
+          {/* <p className="mt-4 max-w-2xl text-xl text-gray-600 lg:mx-auto">
             I am open to exciting and challenging opportunities. Feel free to
             connect.
-          </p>
+          </p> */}
         </div>
         <div className="relative bg-white shadow-xl">
           <h2 className="sr-only">Contact us</h2>
@@ -141,11 +141,11 @@ export default function Contact() {
                 Contact information
               </h3>
               <p className="mt-6 text-base text-indigo-50 max-w-3xl">
-                Nullam risus blandit ac aliquam justo ipsum. Quam mauris
-                volutpat massa dictumst amet. Sapien tortor lacus arcu.
+                I am open to new opportunities and challenges as a web
+                developer.
               </p>
               <dl className="mt-8 space-y-6">
-                <dt>
+                {/* <dt>
                   <span className="sr-only">Phone number</span>
                 </dt>
                 <dd className="flex text-base text-indigo-50">
@@ -154,7 +154,7 @@ export default function Contact() {
                     aria-hidden="true"
                   />
                   <span className="ml-3">+1 (555) 123-4567</span>
-                </dd>
+                </dd> */}
                 <dt>
                   <span className="sr-only">Email</span>
                 </dt>
@@ -163,7 +163,7 @@ export default function Contact() {
                     className="flex-shrink-0 w-6 h-6 text-indigo-200"
                     aria-hidden="true"
                   />
-                  <span className="ml-3">support@workcation.com</span>
+                  <span className="ml-3">muradwebdev@gmail.com</span>
                 </dd>
               </dl>
               <ul className="mt-8 flex space-x-12" role="list">

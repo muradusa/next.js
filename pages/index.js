@@ -7,14 +7,14 @@ import Contact from "../components/Contact";
 
 function Home() {
   return (
-    <div className="bg-gray-50 h-screen">
+    <div className="bg-white h-screen">
       <Head>
-        <title>Murad Cholukov</title>
+        <title>Murad Cholukov - full-stack web developer</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Murad Cholukov's personal website" />
         <meta
           name="keywords"
-          content="full-stack developer, html, javascript, React.js, Next.js, front-end developer, web developer, san francisco bay area"
+          content="full-stack developer, html, javascript, React.js, Next.js, front-end developer, web developer, san francisco bay area, software engineer"
         />
       </Head>
 

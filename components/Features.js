@@ -1,20 +1,5 @@
-// /* This example requires Tailwind CSS v2.0+ */
-// import {
-//   AnnotationIcon,
-//   GlobeAltIcon,
-//   LightningBoltIcon,
-//   ScaleIcon,
-// } from "@heroicons/react/outline";
-
 import { Icon, InlineIcon } from "@iconify/react";
-// import nextjsIcon from "@iconify-icons/logos/nextjs";
-// import reactIcon from "@iconify-icons/logos/react";
-// import graphqlIcon from "@iconify-icons/logos/graphql";
-// import tailwindcssIcon from "@iconify-icons/logos/tailwindcss-icon";
-// import mongodbIcon from "@iconify-icons/logos/mongodb";
-// import awsIcon from "@iconify-icons/logos/aws";
-// import reduxIcon from "@iconify-icons/logos/redux";
-// import firebaseIcon from "@iconify-icons/logos/firebase";
+
 import next from "../src/svg/next";
 import aws from "../src/svg/aws";
 import graphql from "../src/svg/graphql";
@@ -26,37 +11,37 @@ const features = [
   {
     name: "Next JS",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      "Massive performance boost with Server Side Rendering (SSR), best SEO practices, image optimazations, typescript support, and much more... ",
     icon: next,
   },
   {
     name: "React JS",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      "React is the most loved web framework that allows building high-quality and rich user interfaces, usefull developer tools, strong community support. ",
     icon: react,
   },
   {
     name: "Graphql",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      "Fetching data with a single API call in a pretictable way, tailoring requests to yourn needs, validation and type checking out of the box.",
     icon: graphql,
   },
   {
     name: "TailwindCSS",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      "Build pixel-perfect, complex responsive layouts, fully customoziable UI components. File size reduced considerably by using PurgeCSS, hence increasing overall performance",
     icon: tailwindcss,
   },
   {
     name: "Redux",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      "Easy state transfer between the components, predictable states, ease in maintance, server rendering, vast developer tools, great supportive community. ",
     icon: redux,
   },
   {
     name: "AWS",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      "I am using numerous AWS servives like S3 buckets for image and video uploads, EC2 instances, Lambda functions, AWS Elemental for decoding videos and adapting bitrate media streaming.",
     icon: aws,
   },
 ];
@@ -73,8 +58,9 @@ export default function Example() {
             A better way to build apps
           </p>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            Here are some cool technologies i have been playing with to make my
-            apps more performant and nice looking.
+            Here are some cool technologies i have been learning and
+            experimenting with to make my web apps more performant and pixel
+            perfect.
           </p>
         </div>
 

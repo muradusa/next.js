@@ -13,12 +13,12 @@ const navigation = [
 
 export default function Example() {
   return (
-    <Popover className="relative bg-white overflow-hidden">
+    <Popover className="relative bg-white overflow-hidden max-w-7xl mx-auto">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto">
             <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-              <svg
+              {/* <svg
                 className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
                 fill="currentColor"
                 viewBox="0 0 100 100"
@@ -26,7 +26,7 @@ export default function Example() {
                 aria-hidden="true"
               >
                 <polygon points="50,0 100,0 50,100 0,100" />
-              </svg>
+              </svg> */}
 
               <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
                 <nav
@@ -38,8 +38,9 @@ export default function Example() {
                       <a href="#">
                         <span className="sr-only">Workflow</span>
                         <img
-                          className="h-8 w-auto sm:h-14"
-                          src="/favicon.ico"
+                          className="inline-block h-16 w-16 rounded-full"
+                          src="/mugshot.png"
+                          alt=""
                         />
                       </a>
                       <div className="-mr-2 flex items-center md:hidden">
@@ -98,7 +99,11 @@ export default function Example() {
                   <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                     <div className="px-5 pt-4 flex items-center justify-between">
                       <div>
-                        <img className="h-8 w-auto" src="/favicon.ico" alt="" />
+                        <img
+                          className="inline-block h-14 w-14 rounded-full"
+                          src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                          alt=""
+                        />
                       </div>
                       <div className="-mr-2">
                         <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -167,10 +172,11 @@ export default function Example() {
               </main>
             </div>
           </div>
-          <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+          <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 pt-6">
             <img
-              className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-              src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
+              className="h-56 w-full object-fit sm:h-72 md:h-80 lg:h-5/6 lg:pl-28"
+              src="/hero.svg"
+              // src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
               alt=""
             />
           </div>
