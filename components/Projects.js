@@ -3,7 +3,23 @@ import { InboxIcon, SparklesIcon } from "@heroicons/react/outline";
 
 export default function Example() {
   return (
-    <div className="relative bg-white pt-16 pb-32 overflow-hidden">
+    <div
+      id="projects"
+      className="relative bg-white pt-16 pb-32 overflow-hidden"
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:text-center pb-10">
+        <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
+          Projects
+        </h2>
+        <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+          Web apps i built
+        </p>
+        <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+          Here are a few projects that i recently built. Please feel free to
+          check them out and see github for code.
+        </p>
+      </div>
+
       <div className="relative">
         <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
           <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
