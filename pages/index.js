@@ -9,7 +9,7 @@ function Home() {
   return (
     <div className="bg-white h-screen">
       <Head>
-        <title>Murad Cholukov - full-stack web developer</title>
+        <title>Murad Cholukov - full-stack developer</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Murad Cholukov's personal website" />
         <meta
