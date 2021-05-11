@@ -1,22 +1,36 @@
-// /*
-//   This example requires Tailwind CSS v2.0+
-
-//   This example requires some changes to your config:
-
-//   ```
-//   // tailwind.config.js
-//   module.exports = {
-//     // ...
-//     plugins: [
-//       // ...
-//       require('@tailwindcss/forms'),
-//     ]
-//   }
-//   ```
-// */
 import { MailIcon, PhoneIcon } from "@heroicons/react/outline";
+import { useForm } from "react-hook-form";
+import axios from "axios";
+// import userRouter from "next/router"
 
 export default function Contact() {
+  // const router = userRouter()
+  const { register, handleSubmit, errors, reset } = useForm();
+  async function submitForm(values) {
+    let config = {
+      method: "post",
+      url: `http://localhost:3000/api/contact`,
+      headers: {
+        "Content-Type": "application/json",
+      },
+      data: values,
+    };
+
+    try {
+      const response = await axios(config);
+
+      console.log(response);
+      if (response.status == 200) {
+        console.log("Message sending was a success");
+        reset();
+        // router.push('/')
+      }
+      console.log(response);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   return (
     <div id="contact" className="bg-gray-100">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
@@ -233,6 +247,7 @@ export default function Contact() {
                 Send me a message
               </h3>
               <form
+                onSubmit={handleSubmit(submitForm)}
                 action="#"
                 method="POST"
                 className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
@@ -244,15 +259,20 @@ export default function Contact() {
                   >
                     First name
                   </label>
+
                   <div className="mt-1">
                     <input
                       type="text"
-                      name="first_name"
+                      {...register("first_name", {
+                        required: true,
+                        message: "You need to enter your name",
+                      })}
                       id="first_name"
                       autoComplete="given-name"
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                     />
                   </div>
+                  {/* <span>{errors?.first_name?.message}</span> */}
                 </div>
                 <div>
                   <label
@@ -264,8 +284,8 @@ export default function Contact() {
                   <div className="mt-1">
                     <input
                       type="text"
-                      name="last_name"
                       id="last_name"
+                      {...register("last_name")}
                       autoComplete="family-name"
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                     />
@@ -281,8 +301,8 @@ export default function Contact() {
                   <div className="mt-1">
                     <input
                       id="email"
-                      name="email"
                       type="email"
+                      {...register("email")}
                       autoComplete="email"
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                     />
@@ -303,8 +323,8 @@ export default function Contact() {
                   <div className="mt-1">
                     <input
                       type="text"
-                      name="phone"
                       id="phone"
+                      {...register("phone")}
                       autoComplete="tel"
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                       aria-describedby="phone-optional"
@@ -321,8 +341,8 @@ export default function Contact() {
                   <div className="mt-1">
                     <input
                       type="text"
-                      name="subject"
                       id="subject"
+                      {...register("subject")}
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                     />
                   </div>
@@ -342,7 +362,7 @@ export default function Contact() {
                   <div className="mt-1">
                     <textarea
                       id="message"
-                      name="message"
+                      {...register("message")}
                       rows={4}
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                       aria-describedby="message-max"
