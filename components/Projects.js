@@ -5,30 +5,23 @@ const features = [
   {
     name: "Front End",
     description1:
-      "You can manage phone, email and chat conversations all from a single mailbox.",
+      "React JS was utilized to build frontend with reusable and performant components, Redux was chosen to manage component states and utilized Firebase Authentication for user login",
     description2:
-      "You can manage phone, email and chat conversations all from a single mailbox.",
+      "Utilized bcrypt for user login/authentication, React for “reactive” front end, Redux for state management.",
   },
   {
     name: "Back End",
     description1:
-      "You can manage phone, email and chat conversations all from a single mailbox.",
+      "Entire backend is powered by Firebase using their services like Firestore Database for storing data, and Firebase Hosting for hosting this app",
     description2:
-      "You can manage phone, email and chat conversations all from a single mailbox.",
+      "Used Express.js to make RESTful API calls to backend built on Node.js. MongoDB was chosen with Mongoose.js for storing info on database.",
   },
   {
-    name: "User Authentication",
+    name: "Media Upload",
     description1:
-      "You can manage phone, email and chat conversations all from a single mailbox.",
+      "User uplaoded media files are stored and served by Firebase Storage",
     description2:
-      "You can manage phone, email and chat conversations all from a single mailbox.",
-  },
-  {
-    name: "State and Data Management",
-    description1:
-      "You can manage phone, email and chat conversations all from a single mailbox.",
-    description2:
-      "You can manage phone, email and chat conversations all from a single mailbox.",
+      "Utilized aws-sdk for uploading and storing videos in S3 Buckets and used AWS Lambda functions for auto generating thumbnails upon user video upload.",
   },
 ];
 
@@ -57,10 +50,10 @@ export default function Example() {
             <div>
               <div className="mt-2">
                 <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
-                  A family chat web app
+                  Instant Messaging and photo sharing web apps
                 </h2>
                 <div className="mt-12 lg:mt-4 lg:col-span-2">
-                  <dl className="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-1 sm:grid-rows-4 sm:grid-flow-col sm:gap-x-6 sm:gap-y-4 lg:gap-x-8">
+                  <dl className="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-1 sm:grid-rows-3 sm:grid-flow-col sm:gap-x-6 sm:gap-y-4 lg:gap-x-8">
                     {features.map((feature) => (
                       <div key={feature.name} className="relative">
                         <dt>
@@ -126,7 +119,7 @@ export default function Example() {
                   Video sharing app from memorable hunts
                 </h2>
                 <div className="mt-12 lg:mt-4 lg:col-span-2">
-                  <dl className="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-1 sm:grid-rows-4 sm:grid-flow-col sm:gap-x-6 sm:gap-y-4 lg:gap-x-8">
+                  <dl className="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-1 sm:grid-rows-3 sm:grid-flow-col sm:gap-x-6 sm:gap-y-4 lg:gap-x-8">
                     {features.map((feature) => (
                       <div key={feature.name} className="relative">
                         <dt>
