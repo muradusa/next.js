@@ -23,7 +23,7 @@ const features = [
   {
     name: "Graphql",
     description:
-      "Fetching data with a single API call in a pretictable way, tailoring requests to yourn needs, validation and type checking out of the box.",
+      "Fetching data with a single API call in a pretictable way, tailoring requests to your needs, validation and type checking out of the box.",
     icon: graphql,
   },
   {
