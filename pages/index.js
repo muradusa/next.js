@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 
-function Home() {
+function Home(props) {
   return (
     <div className="bg-white h-screen">
       <Head>
@@ -30,3 +30,9 @@ function Home() {
 }
 
 export default Home;
+
+export async function getStaticProps() {
+  return {
+    props: {}, // will be passed to the page component as props
+  };
+}

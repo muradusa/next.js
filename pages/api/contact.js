@@ -1,31 +1,31 @@
 import nodemailer from "nodemailer";
 
 export default async (req, res) => {
-  const { first_name, last_name, email, phone, subject, message } = req.body;
+  const { name, email, subject, message } = req.body;
 
   const transporter = nodemailer.createTransport({
-    host: "smtp-mail.outlook.com",
+    host: "smtp.gmail.com",
     secureConnection: true,
     port: 587,
     auth: {
-      user: "mcholukov@welyons.com",
-      pass: "Neb1raska!",
+      user: "muradwebdev@gmail.com",
+      pass: "RichDad!",
     },
-    tls: {
-      ciphers: "SSLv3",
-    },
+    // tls: {
+    //   ciphers: "SSLv3",
+    // },
   });
 
   try {
     const emailRes = await transporter.sendMail({
       from: email,
-      to: "mcholukov@welyons.com",
-      subject: `Contact form submission from ${first_name}`,
+      to: "muradwebdev@gmail.com",
+      subject: `Contact form submission from ${name}`,
       html: `
-      <p>First Name: ${first_name}</p><br>
-      <p>Last Name: ${last_name}</p><br>
-      <p>Email</p>: ${email}</p><br>
-      <p>Phone: ${phone}</p><br>
+      <p>First Name: ${name}</p><br>
+    
+      <p>Email: ${email}</p><br>
+      
       <p>Subject: ${subject}</p><br>
       <p>Message: ${message}</p><br>
 

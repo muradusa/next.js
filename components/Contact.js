@@ -41,10 +41,6 @@ export default function Contact() {
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             Let's connect
           </p>
-          {/* <p className="mt-4 max-w-2xl text-xl text-gray-600 lg:mx-auto">
-            I am open to exciting and challenging opportunities. Feel free to
-            connect.
-          </p> */}
         </div>
         <div className="relative bg-white shadow-xl">
           <h2 className="sr-only">Contact us</h2>
@@ -159,16 +155,6 @@ export default function Contact() {
                 developer.
               </p>
               <dl className="mt-8 space-y-6">
-                {/* <dt>
-                  <span className="sr-only">Phone number</span>
-                </dt>
-                <dd className="flex text-base text-indigo-50">
-                  <PhoneIcon
-                    className="flex-shrink-0 w-6 h-6 text-indigo-200"
-                    aria-hidden="true"
-                  />
-                  <span className="ml-3">+1 (555) 123-4567</span>
-                </dd> */}
                 <dt>
                   <span className="sr-only">Email</span>
                 </dt>
@@ -181,7 +167,7 @@ export default function Contact() {
                 </dd>
               </dl>
               <ul className="mt-8 flex space-x-12" role="list">
-                <li>
+                {/* <li>
                   <a className="text-indigo-200 hover:text-indigo-100" href="#">
                     <span className="sr-only">Facebook</span>
                     <svg
@@ -199,9 +185,13 @@ export default function Contact() {
                       />
                     </svg>
                   </a>
-                </li>
+                </li> */}
                 <li>
-                  <a className="text-indigo-200 hover:text-indigo-100" href="#">
+                  <a
+                    target="_blank"
+                    className="text-indigo-200 hover:text-indigo-100"
+                    href="https://github.com/muradusa"
+                  >
                     <span className="sr-only">GitHub</span>
                     <svg
                       width={24}
@@ -220,7 +210,11 @@ export default function Contact() {
                   </a>
                 </li>
                 <li>
-                  <a className="text-indigo-200 hover:text-indigo-100" href="#">
+                  <a
+                    target="_blank"
+                    className="text-indigo-200 hover:text-indigo-100"
+                    href="https://twitter.com/muradusa"
+                  >
                     <span className="sr-only">Twitter</span>
                     <svg
                       width={24}
@@ -257,40 +251,24 @@ export default function Contact() {
                     htmlFor="first_name"
                     className="block text-sm font-medium text-gray-900"
                   >
-                    First name
+                    Name
                   </label>
 
                   <div className="mt-1">
                     <input
                       type="text"
-                      {...register("first_name", {
+                      {...register("name", {
                         required: true,
                         message: "You need to enter your name",
                       })}
-                      id="first_name"
+                      id="name"
                       autoComplete="given-name"
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                     />
                   </div>
                   {/* <span>{errors?.first_name?.message}</span> */}
                 </div>
-                <div>
-                  <label
-                    htmlFor="last_name"
-                    className="block text-sm font-medium text-gray-900"
-                  >
-                    Last name
-                  </label>
-                  <div className="mt-1">
-                    <input
-                      type="text"
-                      id="last_name"
-                      {...register("last_name")}
-                      autoComplete="family-name"
-                      className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
-                    />
-                  </div>
-                </div>
+
                 <div>
                   <label
                     htmlFor="email"
@@ -308,29 +286,7 @@ export default function Contact() {
                     />
                   </div>
                 </div>
-                <div>
-                  <div className="flex justify-between">
-                    <label
-                      htmlFor="phone"
-                      className="block text-sm font-medium text-gray-900"
-                    >
-                      Phone
-                    </label>
-                    <span id="phone-optional" className="text-sm text-gray-500">
-                      Optional
-                    </span>
-                  </div>
-                  <div className="mt-1">
-                    <input
-                      type="text"
-                      id="phone"
-                      {...register("phone")}
-                      autoComplete="tel"
-                      className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
-                      aria-describedby="phone-optional"
-                    />
-                  </div>
-                </div>
+
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="subject"
