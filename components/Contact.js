@@ -24,7 +24,7 @@ export default function Contact() {
       if (response.status == 200) {
         alert("Message was successfully sent");
         reset();
-        // router.push('/')
+        router.push("/");
       }
       // console.log(response);
     } catch (error) {
