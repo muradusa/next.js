@@ -20,13 +20,13 @@ export default function Contact() {
     try {
       const response = await axios(config);
 
-      console.log(response);
+      // console.log(response);
       if (response.status == 200) {
-        console.log("Message sending was a success");
+        alert("Message was successfully sent");
         reset();
         // router.push('/')
       }
-      console.log(response);
+      // console.log(response);
     } catch (error) {
       console.log(error);
     }

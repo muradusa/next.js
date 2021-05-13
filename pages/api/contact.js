@@ -8,8 +8,8 @@ export default async (req, res) => {
     secureConnection: true,
     port: 587,
     auth: {
-      user: "muradwebdev@gmail.com",
-      pass: "RichDad!",
+      user: process.env.EMAIL,
+      pass: process.env.PASSWORD,
     },
     // tls: {
     //   ciphers: "SSLv3",
