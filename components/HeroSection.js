@@ -1,8 +1,10 @@
-/* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Link } from "react-scroll";
+
+import lottie from "lottie-web";
+import animation from "../public/hero.json";
 
 const navigation = [
   { name: "Github", href: "https://github.com/muradusa" },
@@ -12,6 +14,13 @@ const navigation = [
 ];
 
 export default function Example() {
+  const heroAnimation = lottie.loadAnimation({
+    // container: document.querySelector("#hero-animation"),
+    animationData: animation,
+    //     loop: true, // boolean
+    // autoplay: true, // boolean
+  });
+
   return (
     <Popover className="relative bg-white overflow-hidden max-w-7xl mx-auto">
       {({ open }) => (
@@ -162,12 +171,17 @@ export default function Example() {
             </div>
           </div>
           <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 pt-6">
-            <img
+            <div
               className="h-56 w-full object-fit sm:h-72 md:h-80 lg:h-5/6 lg:pl-28"
-              src="/hero.svg"
-              // src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
-              alt=""
-            />
+              id="hero-animation"
+            >
+              {heroAnimation}
+            </div>
+
+            {/* <img
+              className="h-56 w-full object-fit sm:h-72 md:h-80 lg:h-5/6 lg:pl-28"
+              src="/hero1.svg"
+            /> */}
           </div>
         </>
       )}
