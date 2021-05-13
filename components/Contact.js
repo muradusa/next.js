@@ -9,7 +9,8 @@ export default function Contact() {
   async function submitForm(values) {
     let config = {
       method: "post",
-      url: `http://localhost:3000/api/contact`,
+      // url: `http://localhost:3000/api/contact`,
+      url: `https://portfolio-next-js-zeta.vercel.app/api/contact`,
       headers: {
         "Content-Type": "application/json",
       },
