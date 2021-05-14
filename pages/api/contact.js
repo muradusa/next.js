@@ -12,13 +12,12 @@ export default async (req, res) => {
       user: process.env.EMAIL,
       clientId: process.env.CLIENT_ID,
       clientSecret: process.env.CLIENT_SECRET,
-      // refreshToken: process.env.REFRESH_TOKEN,
-      // expires: 3599,
       accessToken: process.env.ACCESS_TOKEN,
     },
-    // tls: {
-    //   ciphers: "SSLv3",
-    // },
+
+    // Usefull article for this https://dev.to/chandrapantachhetri/sending-emails-securely-using-node-js-nodemailer-smtp-gmail-and-oauth2-g3a
+    // Access token came from https://developers.google.com/oauthplayground/
+    // ClientId and Secret comes from https://console.cloud.google.com/apis
   });
 
   try {
