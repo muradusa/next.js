@@ -1,16 +1,15 @@
 import { MailIcon, PhoneIcon } from "@heroicons/react/outline";
 import { useForm } from "react-hook-form";
 import axios from "axios";
-// import userRouter from "next/router"
+import userRouter from "next/router";
 
 export default function Contact() {
-  // const router = userRouter()
+  const router = userRouter();
   const { register, handleSubmit, errors, reset } = useForm();
   async function submitForm(values) {
     let config = {
       method: "post",
-      // url: `http://localhost:3000/api/contact`,
-      url: `https://portfolio-next-js-zeta.vercel.app/api/contact`,
+      url: `${process.env.NEXT_PUBLIC_API_URL}/api/contact`,
       headers: {
         "Content-Type": "application/json",
       },
@@ -19,7 +18,6 @@ export default function Contact() {
 
     try {
       const response = await axios(config);
-
       // console.log(response);
       if (response.status == 200) {
         alert("Message was successfully sent");
@@ -28,7 +26,7 @@ export default function Contact() {
       }
       // console.log(response);
     } catch (error) {
-      console.log(error);
+      console.error(error);
     }
   }
 

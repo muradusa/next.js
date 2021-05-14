@@ -8,12 +8,23 @@ export default async (req, res) => {
     secureConnection: true,
     port: 587,
     auth: {
+      type: "OAuth2",
       user: process.env.EMAIL,
-      pass: process.env.PASSWORD,
+      clientId: process.env.CLIENT_ID,
+      clientSecret: process.env.CLIENT_SECRET,
     },
-    // tls: {
-    //   ciphers: "SSLv3",
-    // },
+    tls: {
+      ciphers: "SSLv3",
+    },
+  });
+
+  transporter.set("oauth2_provision_cb", (user, renew, callback) => {
+    let accessToken = userTokens[user];
+    if (!accessToken) {
+      return callback(new Error("Unknown user"));
+    } else {
+      return callback(null, accessToken);
+    }
   });
 
   try {

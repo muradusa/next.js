@@ -3,8 +3,8 @@ import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Link } from "react-scroll";
 
-import lottie from "lottie-web";
-import animation from "../public/hero.json";
+// import lottie from "lottie-web";
+// import animation from "../public/hero.json";
 
 const navigation = [
   { name: "Github", href: "https://github.com/muradusa" },
@@ -14,12 +14,12 @@ const navigation = [
 ];
 
 export default function Example() {
-  const heroAnimation = lottie.loadAnimation({
-    // container: document.querySelector("#hero-animation"),
-    animationData: animation,
-    //     loop: true, // boolean
-    // autoplay: true, // boolean
-  });
+  // const heroAnimation = lottie.loadAnimation({
+  //   // container: document.querySelector("#hero-animation"),
+  //   animationData: animation,
+  //   //     loop: true, // boolean
+  //   // autoplay: true, // boolean
+  // });
 
   return (
     <Popover className="relative bg-white overflow-hidden max-w-7xl mx-auto">
@@ -171,17 +171,17 @@ export default function Example() {
             </div>
           </div>
           <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 pt-6">
-            <div
+            {/* <div
               className="h-56 w-full object-fit sm:h-72 md:h-80 lg:h-5/6 lg:pl-28"
               id="hero-animation"
             >
               {heroAnimation}
-            </div>
+            </div> */}
 
-            {/* <img
+            <img
               className="h-56 w-full object-fit sm:h-72 md:h-80 lg:h-5/6 lg:pl-28"
               src="/hero1.svg"
-            /> */}
+            />
           </div>
         </>
       )}
