@@ -12,26 +12,20 @@ export default async (req, res) => {
       user: process.env.EMAIL,
       clientId: process.env.CLIENT_ID,
       clientSecret: process.env.CLIENT_SECRET,
+      // refreshToken: process.env.REFRESH_TOKEN,
+      // expires: 3599,
+      accessToken: process.env.ACCESS_TOKEN,
     },
-    tls: {
-      ciphers: "SSLv3",
-    },
-  });
-
-  transporter.set("oauth2_provision_cb", (user, renew, callback) => {
-    let accessToken = userTokens[user];
-    if (!accessToken) {
-      return callback(new Error("Unknown user"));
-    } else {
-      return callback(null, accessToken);
-    }
+    // tls: {
+    //   ciphers: "SSLv3",
+    // },
   });
 
   try {
     const emailRes = await transporter.sendMail({
       from: email,
-      to: "muradwebdev@gmail.com",
-      subject: `Contact form submission from ${name}`,
+      to: "mcholukov@welyons.com",
+      subject: `Murad Webdev Portfolio contact form submission from ${name} `,
       html: `
       <p>First Name: ${name}</p><br>
     
