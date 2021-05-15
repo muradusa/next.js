@@ -9,7 +9,9 @@ function Home(props) {
   return (
     <div className="bg-white h-screen">
       <Head>
-        <title>Murad Cholukov - full-stack developer, frontend, backend</title>
+        <title>
+          Murad Cholukov | Full Stack Engineer | Mentor | San Francisco BayArea
+        </title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Murad Cholukov's personal website" />
         <meta
