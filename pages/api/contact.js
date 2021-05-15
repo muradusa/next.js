@@ -26,12 +26,10 @@ export default async (req, res) => {
       to: "mcholukov@welyons.com",
       subject: `Murad Webdev Portfolio contact form submission from ${name} `,
       html: `
-      <p>First Name: ${name}</p><br>
-    
-      <p>Email: ${email}</p><br>
-      
-      <p>Subject: ${subject}</p><br>
-      <p>Message: ${message}</p><br>
+      <p>First Name: ${name}</p>
+      <p>Email: ${email}</p>
+      <p>Subject: ${subject}</p>
+      <p>Message: ${message}</p>
 
    `,
     });

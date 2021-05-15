@@ -2,9 +2,10 @@ import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Link } from "react-scroll";
+import Image from "next/image";
 
 import Lottie from "lottie-react-web";
-import animation from "../public/hero.json";
+import animation from "../public/hero1.json";
 
 const navigation = [
   { name: "Github", href: "https://github.com/muradusa" },
@@ -28,8 +29,10 @@ export default function Example() {
                   <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                     <div className="flex items-center justify-between w-full md:w-auto">
                       <span className="sr-only">Workflow</span>
-                      <img
-                        className="inline-block h-16 w-16 rounded-full"
+                      <Image
+                        height={80}
+                        width={80}
+                        className="inline-block rounded-full"
                         src="/mugshot.png"
                         alt=""
                       />
@@ -90,9 +93,11 @@ export default function Example() {
                   <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                     <div className="px-5 pt-4 flex items-center justify-between">
                       <div>
-                        <img
+                        <Image
+                          height={80}
+                          width={80}
                           className="inline-block h-14 w-14 rounded-full"
-                          src="mugshot.png"
+                          src="/mugshot.png"
                           alt=""
                         />
                       </div>
@@ -164,17 +169,14 @@ export default function Example() {
             </div>
           </div>
           <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 pt-6">
-            <Lottie
-              className="h-56 w-full object-fit sm:h-72 md:h-80 lg:h-5/6 lg:pl-28"
-              options={{
-                animationData: animation,
-                loop: false,
-              }}
-            />
-            {/* <img
-              className="h-56 w-full object-fit sm:h-72 md:h-80 lg:h-5/6 lg:pl-28"
-              src="/hero1.svg"
-            /> */}
+            <div className="h-72 w-full object-fit sm:h-80 md:h-96 lg:h-5/6 lg:pl-28">
+              <Lottie
+                options={{
+                  animationData: animation,
+                  loop: true,
+                }}
+              />
+            </div>
           </div>
         </>
       )}

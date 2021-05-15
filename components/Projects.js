@@ -1,5 +1,5 @@
-/* This example requires Tailwind CSS v2.0+ */
-import { InboxIcon, SparklesIcon, CheckIcon } from "@heroicons/react/outline";
+import { CheckIcon } from "@heroicons/react/outline";
+import Image from "next/image";
 
 const features = [
   {
