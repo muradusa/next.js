@@ -12,6 +12,7 @@ export default async (req, res) => {
       user: process.env.EMAIL,
       clientId: process.env.CLIENT_ID,
       clientSecret: process.env.CLIENT_SECRET,
+      refreshToken: process.env.GMAIL_REFRESH_TOKEN,
       accessToken: process.env.ACCESS_TOKEN,
     },
 
