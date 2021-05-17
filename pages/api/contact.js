@@ -4,9 +4,9 @@ export default async (req, res) => {
   const { name, email, subject, message } = req.body;
 
   const transporter = nodemailer.createTransport({
-    // host: "smtp.gmail.com",
+    host: "smtp.gmail.com",
     // secureConnection: true,
-    service: "gmail",
+
     tls: {
       rejectUnauthorized: false,
     },
@@ -39,10 +39,11 @@ export default async (req, res) => {
    `,
     });
     console.log("Message Sent", emailRes.messageId);
+    res.status(200).json([emailRes.messageId, req.body]);
   } catch (error) {
     console.log(error);
   }
 
   console.log(req.body);
-  res.status(200).json(req.body);
+  // res.status(200).json(req.body);
 };
