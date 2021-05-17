@@ -18,7 +18,7 @@ export default function Contact() {
 
     try {
       const response = await axios(config);
-      // console.log(response);
+      console.log(response);
       if (response.status == 200) {
         alert("Message was successfully sent");
         reset();
