@@ -9,8 +9,8 @@ export default function Contact() {
   async function submitForm(values) {
     let config = {
       method: "post",
-      // url: `${process.env.NEXT_PUBLIC_API_URL}/api/contact`,
-      url: `https://www.muradwebdev.com/api/contact`,
+      url: `${process.env.NEXT_PUBLIC_API_URL}/api/contact`,
+      // url: `https://www.muradwebdev.com/api/contact`,
       headers: {
         "Content-Type": "application/json",
       },
