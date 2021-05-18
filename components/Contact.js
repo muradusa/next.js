@@ -4,7 +4,6 @@ import axios from "axios";
 // import userRouter from "next/router";
 
 export default function Contact() {
-  // const router = userRouter();
   const { register, handleSubmit, errors, reset } = useForm();
   async function submitForm(values) {
     let config = {
