@@ -11,37 +11,37 @@ const features = [
   {
     name: "Next JS",
     description:
-      "Massive performance boost with Server Side Rendering (SSR), best SEO practices, image optimazations, typescript support, and much more... ",
+      "Massive performance boost with Server Side Rendering (SSR), best SEO practices, image optimizations, typescript support, and much more... ",
     icon: next,
   },
   {
     name: "React JS",
     description:
-      "React is the most loved web framework that allows building high-quality and rich user interfaces, usefull developer tools, strong community support. ",
+      "React is the most loved web framework that allows building high-quality and rich user interfaces, useful developer tools, strong community support. ",
     icon: react,
   },
   {
     name: "Graphql",
     description:
-      "Fetching data with a single API call in a pretictable way, tailoring requests to your needs, validation and type checking out of the box.",
+      "Fetching data with a single API call in a predictable way, tailoring requests to your needs, validation and type checking out of the box.",
     icon: graphql,
   },
   {
     name: "TailwindCSS",
     description:
-      "Build pixel-perfect, complex responsive layouts, fully customoziable UI components. File size reduced considerably by using PurgeCSS, hence increasing overall performance",
+      "Build pixel-perfect, complex responsive layouts, fully customizable UI components. File size reduced considerably by using PurgeCSS, hence increasing overall performance.",
     icon: tailwindcss,
   },
   {
     name: "Redux",
     description:
-      "Easy state transfer between the components, predictable states, ease in maintance, server rendering, vast developer tools, great supportive community. ",
+      "Easy state transfer between the components, predictable states, ease in maintenance, server rendering, vast developer tools, great supportive community. ",
     icon: redux,
   },
   {
     name: "AWS",
     description:
-      "I am using numerous AWS servives like S3 buckets for image and video uploads, EC2 instances, Lambda functions, AWS Elemental for decoding videos and adapting bitrate media streaming.",
+      "I am using numerous AWS services like S3 buckets for image and video uploads, EC2 instances, Lambda functions, AWS Elemental for decoding videos and adapting bitrate media streaming.",
     icon: aws,
   },
 ];

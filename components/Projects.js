@@ -5,7 +5,7 @@ const features = [
   {
     name: "Front End",
     description1:
-      "React JS was utilized to build frontend with reusable and performant components, Redux was chosen to manage component states and utilized Firebase Authentication for user login",
+      "React JS was utilized to build frontend with reusable and performant components, Redux was chosen to manage component states and utilized Firebase Authentication for user login.",
     description2:
       "Utilized bcrypt for user login/authentication, React for “reactive” front end, Redux for state management.",
   },
@@ -19,7 +19,7 @@ const features = [
   {
     name: "Media Upload",
     description1:
-      "User uplaoded media files are stored and served by Firebase Storage",
+      "User uploaded media files are stored and served by Firebase Storage",
     description2:
       "Utilized aws-sdk for uploading and storing videos in S3 Buckets and used AWS Lambda functions for auto generating thumbnails upon user video upload.",
   },
